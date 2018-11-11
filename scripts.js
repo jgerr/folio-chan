@@ -26,11 +26,10 @@ function expand(elm, second){
         }
         content.style.maxHeight = null;
         content.style.overflow = 'hidden';
-
     }
     else {
+        content.style.maxHeight = '100%'; 
         content.innerHTML = innards.innerHTML;
-        content.style.maxHeight = '100%';
     } 
 }
 
