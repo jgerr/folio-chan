@@ -33,6 +33,29 @@ function expand(elm, second){
     } 
 }
 
+function showContent(elm, second){
+    var innards = gelm(second);
+    var content = gelm('qualityContent');
+    
+    if (content.classList.contains('fadeIn')){
+        if (content.innerHTML != innards.innerHTML){
+            setTimeout(function(){showContent(elm, second);}, 400);
+        }
+        //content.style.opacity = '0';
+        content.classList.remove('fadeIn');
+        void content.offsetWidth;
+        content.classList.add('fadeOut');
+    }
+    else { //SHOW content
+        setTimeout(function(){ 
+            //content.style.opacity = '1'; 
+            content.classList.remove('fadeOut');
+            void content.offsetWidth;
+            content.classList.add('fadeIn');
+            content.innerHTML = innards.innerHTML;}, 200);
+    } 
+}
+
 function wipe(elm){
     var fronts = document.getElementsByClassName("front");
     var easeIn_anims = ['ei1-4', 'ei2-4', 'ei3-4', 'ei4-4'];
