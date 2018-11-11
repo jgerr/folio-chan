@@ -1,0 +1,408 @@
+/* style.css */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ddd; 
+    border-radius: 25px;
+}
+
+/* Track on hover */
+::-webkit-scrollbar-track:hover {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #aaa; 
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #999; 
+}
+
+body {
+    background-color: #ddd;
+    background-image: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	color: #00000f;
+    font-size: 20px;
+    font-family: 'Gudea';
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.centerParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container {
+    border: 0px solid #0000ff;
+    background-color: #ffffff;
+    width: 30%; 
+    height: 20%;
+    max-height: 20%; 
+    margin: auto;
+    text-align: center;
+    
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 #aaabbb;
+}
+
+.container2 {
+    border: 0px solid #0000ff;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 #aaabbb;
+    width: 34%; 
+    text-align: center; 
+    height: 0%;
+    max-height: 0%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    
+}
+
+.imgSmall{
+    width: 24%;
+}
+
+.cover{
+    border: 0px solid #0000ff;
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.centerBottom {
+    border: 0px solid #00ff00;
+    display: table-cell; /* display: table; needs to be in parent*/
+    text-align: center;
+    vertical-align: bottom; /*middle for true centering*/
+}
+.centerBottomM {
+    border: 0px solid #00ff00;
+    display: table-cell; /* display: table; needs to be in parent*/
+    text-align: center;
+    vertical-align: bottom; /*middle for true centering*/
+}
+.centerMiddle {
+    border: 0px solid #00ff00;
+    display: table-cell; /* display: table; needs to be in parent*/
+    vertical-align: middle; /*middle for true centering*/
+}
+.innards{
+    border: 0px solid #00ff00;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    max-height: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.justify{
+    display: inline-block;
+}
+.smol{
+    font-size: 16px;
+}
+.innerTitle{
+    font-family: 'Dosis', cursive;
+    font-size: 3vw;
+    padding: 2%;
+}
+.innerContent{
+    font-family: 'Gudea', sans-serif;
+    font-size: 1.25vw;
+    word-wrap: break-word;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+.noPad{
+    padding: 0%;
+}
+.frontTitle{
+    font-family: 'Dosis', cursive;
+    font-size: 3vw;
+}
+
+.front{
+    cursor: pointer;
+    z-index:1;
+}
+.back{
+    cursor: pointer;
+    z-index:0;
+}
+.corner{
+    border: 0px solid #abfc4a;
+    position: fixed;
+    top: 20%;
+    left: 4%;
+    width: 16%;
+    height:100%;
+    min-width:300px;
+    z-index:5;
+
+}
+.menuOption{
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0 2px 10px 0 #999;
+    display: table;
+    text-align: center;
+}
+.mainOption{
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: 0 2px 10px 0 #999;
+    display: table;
+    text-align: center;
+    padding-bottom: 4%;
+    font-size:40px;
+}
+.clickable{
+    cursor:pointer;
+}
+.centerText{
+    text-align:center;
+}
+.cloud{
+    display: block;
+    height:100%;
+    width:100%;
+}
+.face{
+    pointer-events: none;
+    user-select: none;
+}
+.icon{
+    pointer-events: none;
+}
+.droplet{
+    position:absolute;
+    border: 0px solid lightskyblue;
+    display:block;
+    width: 15%;
+    height:50%
+}
+.shadow{
+    filter:drop-shadow(0px 0px 5px #bbb);
+}
+
+path {
+  fill: white;
+  stroke-width: 0;
+  stroke-linejoin: round;
+}
+path:hover {
+  /*fill: lightskyblue;*/
+}
+text{
+    font: 12px 'Dosis', cursive;
+}
+
+/* for specific div positions */
+#bgImage
+{
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+    background:#ddd;
+    /*background-image: url('design/hellBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -100;
+}
+
+#menu{
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    background-color: #444;
+    /*box-shadow: 0 2px 10px 0 #aaabbb;*/
+    box-shadow: 0 2px 10px 0 #666;
+    color: #eee;
+    padding: 10%;
+    text-align: center;
+}
+#menuCloud{
+    border: 0px solid #6faf66;
+    position: relative;
+    width:100%;
+    height:20%;
+    min-height:200px;
+    z-index: 8;
+}
+#optionsParent{
+    border: 0px solid #6faf66;
+    position:relative;
+    height:160px;
+    z-index: 3;
+}
+#pageName{
+    text-align:center;
+    width:100%;
+    padding-top: 5%;
+    font-size:22px;
+    color: #000;
+    text-shadow:  0 0 4px rgba(0, 0, 0, 0.4); 
+}
+#anim{
+    background-color: rgb(255, 208,108);
+    width:20%;
+    position: absolute;
+    top: 0;
+    left: 21%;
+    height:80px;
+}
+#design{
+    background-color: rgb(255, 108, 108);
+    width:20%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    height:150px;
+}
+#games{
+    background-color: rgb(121, 108, 196);
+    width:20%;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    height:110px;
+}
+#landing{
+    border: 0px solid #0000ff;
+    width:50%;
+    height:80%;
+    margin: 0 auto;
+}
+#watashi{
+    position: relative;
+    border: 0px solid #00ff00;
+    height: 50%;
+    width:100%;
+}
+#anata{
+    position: relative;
+    border: 0px solid #00ff00;
+    height: 50%;
+    width:100%;
+}
+#jojo{
+    position: absolute;
+    top: 65%;
+    left: 32%;
+}
+#animDroplet{
+    top: 0%;
+    left:25%;
+}
+#designDroplet{
+    top: 50%;
+    left:42%;
+}
+#gameDroplet{
+    top: 20%;
+    left:60%;
+}
+
+/*bg images*/
+#stickersF{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 12px rgb(255, 0, 98);
+    background-image:linear-gradient(0deg,rgba(255,0,98,0.6),rgba(255,0,98,0.6)), url('design/stickers/icecream2.PNG');
+    background-position:center;
+    background-size:cover; 
+}
+#stickersF:hover{
+    background-image:linear-gradient(0deg,rgba(255,0,98,0.7),rgba(255,0,98,0.7)), url('design/stickers/icecream2.PNG');
+}
+
+#hellF{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 12px rgb(255,0,0);
+    background-image:linear-gradient(0deg,rgba(255,0,0,0.8),rgba(255,0,0,0.8)), url('design/hell/hell.PNG');
+    background-position:center;
+    background-size:cover;
+}
+#hellF:hover{
+    background-image:linear-gradient(0deg,rgba(255,0,0,0.9),rgba(255,0,0,0.9)), url('design/hell/hell.PNG');
+}
+
+#nbtF{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 12px rgb(68, 0, 255);
+    background-image:linear-gradient(0deg,rgba(68, 0, 255,0.4),rgba(68, 0, 255,0.4)), url('design/nbt/galaxy.jpg');
+    background-position:center;
+    background-size:cover;
+}
+#nbtF:hover{
+    background-image:linear-gradient(0deg,rgba(68, 0, 255,0.5),rgba(68, 0, 255,0.5)), url('design/nbt/galaxy.jpg');
+}
+
+#graphicsF{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 12px rgb(255, 123, 0);
+    background-image:linear-gradient(0deg,rgba(255, 123, 0, 0.6),rgba(255, 123, 0,0.6)), url('design/gd/esabBG.png');
+    background-position:center;
+    background-size:cover;
+}
+#graphicsF:hover{
+    background-image:linear-gradient(0deg,rgba(255, 123, 0,0.7),rgba(255, 123, 0,0.7)), url('design/gd/esabBG.png');
+}
+/*real positions for divs*/
+
+.stickers{
+    position: absolute;
+    top: 7%;
+    right: 38%;
+}
+.tab{
+    position: absolute;
+    right: 34%;
+    z-index: 10;
+}
+.nbt{
+    position: absolute;
+    top: 29%;
+    right: 27%;
+}
+.hell{
+    position: absolute;
+    top: 51%;
+    right: 16%;
+}
+.graphics{
+    position: absolute;
+    top: 73%;
+    right: 5%;
+}
+
+#end{
+    position: absolute;
+    text-align:right;
+    top: 95%;
+    right: 5%;
+    color: #000;
+    text-shadow:  0 0 4px rgba(0, 0, 0, 0.4); 
+}
+

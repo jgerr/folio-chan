@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>jo gerr's portfolio </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="animations.css">
+        <link href="https://fonts.googleapis.com/css?family=Gudea|Share" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src='scripts.js'></script>
+
+        <div id=menuParent class='corner animated fadeInDown'>
+            <div id=menuCloud class='animated clickable' onmouseover="pulseOut(this);" onmouseout="pulseIn(this);">
+                <svg class='cloud shadow' viewBox='10 33 85 57'>
+                    <path d='M 25,60 
+                            a 15,15 1 0,0 0,30 
+                            h 55 
+                            a 15,15 1 0,0 0,-30 
+                            a 12,12 1 0,0 -16,-12 
+                            a 20,20 1 0,0 -40,15  
+                            z' />
+                    
+                    <text class='face' text-anchor="middle" x="52" y="78">
+                        ・ ε ・
+                    </text>
+                </svg>
+            </div>
+            <div id=optionsParent>
+                <div id=anim class="menuOption clickable animated" onmouseover="pulseOut(this);" onmouseout="pulseIn(this);">
+                    <div class='centerBottom'>A</div>
+                </div>
+                <div id=design class="menuOption clickable animated" onmouseover="pulseOut(this);" onmouseout="pulseIn(this);">
+                    <div class='centerBottom'>D</div>
+                </div>
+                <div id=games class="menuOption clickable animated" onmouseover="pulseOut(this);" onmouseout="pulseIn(this);">
+                    <div class='centerBottom'>G</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class='cover'>
+            <div class='centerMiddle centerText frontTitle'>
+                <div id=landing>
+                    <div id=watashi class='animated fadeInDown'> 
+                        <svg id='mainCloud' class='cloud shadow animated' viewBox='10 33 85 57'>
+                            <path class="clickable animated" onmouseover="pulseOut('mainCloud');" onmouseout="pulseIn('mainCloud');" 
+                                    d='M 25,60 
+                                    a 15,15 1 0,0 0,30 
+                                    h 55 
+                                    a 15,15 1 0,0 0,-30 
+                                    a 12,12 1 0,0 -16,-12 
+                                    a 20,20 1 0,0 -40,15  
+                                    z' />
+                            
+                            <text class='face' text-anchor="middle" x="52" y="78">
+                                    ・ ε ・
+                                <!-- ◕‿◕ ´ヮ` ´ ▽ ` ｡•́‿•̀｡ ･д･ ｡• ω •｡ ･ᴗ･  ・ ε ・⁄ ⁄•⁄ω⁄•⁄ ⁄ ´ д `  ╥﹏╥ ＞＿＜; ╬ Ò﹏Ó ¬‿¬ ⊙_⊙  
+                                    . •́ _ʖ •̀ . ˵◕ω◕˵ •ㅅ•❀  ◉‿◉  ͡ಠ ʖ̯ ͡ಠ ´〇` -->
+                            </text>
+                        </svg>
+                    </div>
+                    <div id=anata class='animated fadeInDown'>
+                        <div id=animDroplet class='droplet shadow animated'>
+                            <svg class='cloud' viewbox='0 0 100 100'>
+                                <circle class='clickable' cx="50" cy="50" r="40" fill="rgb(224, 181, 60)" onmouseover="pulseOut('animDroplet');" onmouseout="pulseIn('animDroplet');" />
+                                
+                            </svg>
+                        </div>
+                        
+                        <div id=designDroplet class='droplet shadow animated'>
+                            <svg class='cloud' viewbox='0 0 100 100'>
+                                <circle class='clickable' cx="50" cy="50" r="40" fill="rgb(255, 108, 108)" onmouseover="pulseOut('designDroplet');" onmouseout="pulseIn('designDroplet');" />
+                                
+                            </svg>
+                        </div>
+                            
+                        <div id=gameDroplet class='droplet shadow animated'>
+                            <svg class='cloud' viewbox='0 0 100 100'>
+                                <circle class='clickable' cx="50" cy="50" r="40" fill="rgb(121, 108, 196)" onmouseover="pulseOut('gameDroplet');" onmouseout="pulseIn('gameDroplet');" />
+                                
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

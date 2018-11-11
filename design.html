@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <title>design </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="animations.css">
+        <link href="https://fonts.googleapis.com/css?family=Gudea|Share|Dosis" rel="stylesheet">
+    </head>
+
+    <body onload='saveState();'>
+    <script src='scripts.js'></script>
+
+    <div id=bgImage class='animated '></div>
+
+    <div id=menuParent class='corner animated fadeInDown'>
+        <div id=menuCloud class='animated'>
+            <svg class='cloud shadow animated 'onmouseover="pulseOut(this);hover('HOME', this);" onmouseout="pulseIn(this);unhover();" viewBox='10 33 85 57'>
+                <a href="index.html">
+                <path class='clickable' d='M 25,60 
+                        a 15,15 1 0,0 0,30 
+                        h 55 
+                        a 15,15 1 0,0 0,-30 
+                        a 12,12 1 0,0 -16,-12 
+                        a 20,20 1 0,0 -40,15  
+                        z' />
+                    </a>
+                
+                <text class='face' text-anchor="middle" x="52" y="78">
+                    ・ ε ・
+                </text>
+            </svg>
+        </div>
+        <div id=optionsParent>
+            <div id=anim style="height:80px;" class="menuOption clickable animated" onmouseover="pulseOut(this);hover('ANIMATION', this);" onmouseout="pulseIn(this);unhover();">
+                <div class='centerBottom'>
+                    <img src='animate.png' width=100%>
+                </div>
+            </div>
+            <div id=design style="height:160px;" class="menuOption clickable animated" onmouseover="pulseOut(this);hover('DESIGN', this);" onmouseout="pulseIn(this);unhover();">
+                <div class='centerBottom'>
+                    <img src='design.png' width=100%>
+                </div>
+            </div>
+            <div id=games style="height:110px;" class="menuOption clickable animated" onmouseover="pulseOut(this);hover('GAMES', this);" onmouseout="pulseIn(this);unhover();">
+                <div class='centerBottom'>
+                    <img src='gameAlt.png' width=100%>
+                </div>
+            </div>
+        </div>
+        <div id=pageName>
+            DESIGN
+        </div>
+    </div>
+
+        <div id=stickersF class='container front stickers animated fadeInDown' onclick="expand(this, 'stickersB'); wipe(this); fadeToggle('bgImage', '255,173,210,0.7', 'design/stickers/icecream.png', 'repeat', 'auto');">
+            <div class='innards cover'>
+                <div class='centerMiddle'>
+                    <div class='frontTitle'> LINE Stickers </div>
+                    <div class='innerContent'>
+                        Animated stickers for the LINE messaging app.     
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id=responsive class='container2 tab animated centerParent'></div>
+
+        <div id=stickersB class='container2 tab animated'>
+            <div class='innards'>
+                <div class='innerTitle'> LINE Stickers </div>
+                <div class='innerContent'>
+                    I make <a href="https://store.line.me/stickershop/author/132264/en/" target="_blank">sticker packs</a> for LINE.
+                </div>
+                <div class='innerContent justify'>
+                    <img src='design/stickers/16_wink.png' class='imgSmall' onmouseover="replay(this);">
+                    <img src='design/stickers/02_ow.png'  class='imgSmall' onmouseover="replay(this);">
+                    <img src='design/stickers/14_melt.png' class='imgSmall' onmouseover="replay(this);">
+                </div>
+                <div class='innerContent'>
+                 <a href='https://store.line.me/stickershop/product/1415148/en'>The Daily Lives of Ice Cream</a> shows what I imagine ice cream cones get up to in their spare time. 
+                </div>
+                <div class='innerContent'>
+                    <img src='design/stickers/01_blushy2.png' class='imgSmall' onmouseover="replay(this);">
+                    <img src='design/stickers/16_pancake.png'  class='imgSmall' onmouseover="replay(this);">
+                    <img src='design/stickers/08_skippoo.png' class='imgSmall' onmouseover="replay(this);">
+                </div>
+                
+                <div class='innerContent'>
+                    Trax the T-Rex's sticker pack is currently in the publishing pipeline!
+                </div>
+            </div>
+        </div>
+
+        <div id=nbtF class='container front nbt animated fadeInDown' onclick="expand(this, 'nbtB'); wipe(this); fadeToggle('bgImage', '180, 153, 255,0.7', 'design/nbt/maze.jpg', 'no-repeat', 'cover');">
+            <div class='innards cover'>
+                <div class='centerMiddle'>
+                    <div class='frontTitle'> The aMAZEing Space </div>
+                    <div class='innerContent'>
+                        Aesthetic design of a pop-up maze and its promotional materials.     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id=nbtB class='container2 tab animated'>
+            <div class='innards'>
+                <div class='innerTitle'> The aMAZEing Space </div>
+                <div class='innerContent'>
+                    I singlehandedly designed the aesthetics for a student-run maze for prospective students during campus preview week. 
+                </div>
+                <div class='innerContent'><img src='design/nbt/logo.png' height=0%></div>
+                <div class='innerContent'>
+                    For the logo, I emphasized our 'space' theme by making a rocket the centerpiece, and surrounding it with a circular maze that resembles planetary rings.  
+                </div>
+                <div class='innerContent'><img src='design/nbt/galaxy.jpg' height=0%></div>
+                <div class='innerContent'>
+                    I painted the exterior of the maze with a combination of purple skies and celestial bodies, and turned the central tower into a rocket with a nose and fins.  
+                </div>
+            </div>
+        </div>
+
+        <div id=hellF class='container front hell animated fadeInDown' onclick="expand(this, 'hellB'); wipe(this); fadeToggle('bgImage', '245,245,245,0.85', 'design/hell/hellBG.png', 'repeat', 'cover');">
+            <div class='innards cover'>
+                <div class='centerMiddle'>
+                    <div class='frontTitle'> Hell's Kitchen </div>
+                    <div class='innerContent'>
+                        An interactive comic. Try to make curry without messing up!     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id=hellB class='container2 tab animated'>
+            <div class='innards'>
+                <div class='innerTitle'> Hell's Kitchen </div>
+                <div class='innerContent'>
+                    <i>Hell's Kitchen</i> is a 24-page multisequential comic. 
+                    <br>
+                    You can read it <a href>on my site</a> digitally, or find me in real life and take a look at a physically bound copy.
+                    <p>
+                    As a rookie chef, you've been tasked to prepare curry. 
+                    <br>
+                    Your goal is simple: to succeed! 
+                    </p>
+                    <span class=smol>...who knows what might happen if you mess up?</span>
+                    <!-- was borne out of a mid-semester project for CMS.618, <i>Interactive Narrative.</i> -->   
+                </div>
+            </div>
+        </div>
+
+        <div id=graphicsF class='container front graphics animated fadeInDown' onclick="expand(this, 'graphicsB'); wipe(this); fadeToggle('bgImage', '178, 178, 255, 0.75', 'design/gd/esabBG.png', 'no-repeat', 'cover');">
+            <div class='innards cover'>
+                <div class='centerMiddle'>
+                    <div class='frontTitle'> Graphic Design </div>
+                    <div class='innerContent'>
+                        Freelance and extracurricular graphic designs.      
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id=graphicsB class='container2 tab animated'>
+            <div class='innards'>
+                <div class='innerTitle'> Graphic Design </div>
+                <div class='innerContent'>
+                    I also spend my days freelancing commissions, and doing designs for my extracurricular activities on campus.
+                </div>
+                <div class='innerContent noPad'>
+                    <img src='design/gd/esabTwitch.png' width=101%>
+                </div>
+                <div class='innerContent'>
+                    A friend in UC Berkeley's ESports club commisioned me to create a background for their Twitch streaming page. 
+                    <br><br>
+                    I combined the college's colors with native icons and photos of their teams to create an unobtrusive background representing Berkeley's ESports culture.     
+                </div>
+                <div class='innerContent noPad'>
+                    <img src='design/gd/pm12.png' width=50%>
+                    <img src='design/gd/pm22.png' width=50%>
+                </div>
+                <div class='innerContent'>
+                    Lorem ipsum dolor sit amet,     
+                </div>
+                <div class='innerContent'>
+                    <img src='design/gd/fap1.png' width=100%>
+                    <img src='design/gd/fap2.png' width=60%>
+                </div>
+                <div class='innerContent'>
+                    Lorem ipsum dolor sit amet,     
+                </div>
+            </div>
+        </div>
+
+        <div id=end>© joanna gerr</div>
+    </body>
+</html>

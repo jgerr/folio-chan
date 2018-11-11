@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>jo gerr's portfolio </title>
+		<link rel="stylesheet" type="text/css" href="styleOld.css">
+        <link rel="stylesheet" type="text/css" href="animations.css">
+        <link href="https://fonts.googleapis.com/css?family=Gudea|Share" rel="stylesheet">
+    </head>
+
+    <body>
+        <script src='scripts.js'></script>
+
+        <div id=menuParent class='corner animated fadeInDown'>
+            <div id=menu class='animated clickable' onmouseover="pulseOut(this);" onmouseout="pulseIn(this);">
+                <span class='innerTitle'>jojo</span><br>
+                watashi wa jojo
+            </div>
+            <div id=optionsParent>
+                <div id=anim class="menuOption clickable animated" onmouseover="pulseOut(this);" onmouseout="pulseIn(this);">
+                    <div class='centerBottom'>A</div>
+                </div>
+                <div id=design class="menuOption clickable animated" onmouseover="pulseOut(this);" onmouseout="pulseIn(this);">
+                    <div class='centerBottom'>D</div>
+                </div>
+                <div id=games class="menuOption clickable animated" onmouseover="pulseOut(this);" onmouseout="pulseIn(this);">
+                    <div class='centerBottom'>G</div>
+                </div>
+            </div>
+        </div>
+
+        <div id=sampleH class='container back animated fadeInDown'>
+            <div class='innards'>
+                <div class='innerTitle'> Yeet. </div>
+                <div class='innerContent'>[image here]</div>
+                <div class='innerContent'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis ante vel efficitur pretium. Nunc varius sollicitudin imperdiet. Aenean lobortis commodo ipsum ut bibendum. Quisque urna libero, malesuada et laoreet at, volutpat nec risus. Aliquam nec semper neque. Nunc ultrices scelerisque laoreet. Curabitur faucibus sodales faucibus. Duis vulputate vel justo a tincidunt. Phasellus dictum mauris eu nunc ornare, in fringilla dui ornare. In congue urna libero, non porta augue dictum id. Ut quis tristique nulla, at interdum dui. Praesent cursus risus ut tortor blandit rutrum. Integer feugiat turpis porta, malesuada magna ac, rhoncus lorem. Quisque eros nulla, interdum in sapien eu, pellentesque euismod massa. Nulla facilisis, ligula sit amet viverra volutpat, arcu ex convallis diam, et tempus lectus libero quis nunc. Mauris erat est, vestibulum cursus tempor in, iaculis at augue.     
+                </div>
+            </div>
+        </div>
+
+        <div id=sampleF class='container front animated fadeInDown'>
+            <div class='innards cover'>
+                <div class='centerMiddle'>
+                    <div class='frontTitle'> Yeet. </div>
+                    <div class='innerContent'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id=yeetF class='container front sampleFlipper animated fadeInDown' onclick="swap(this, 'yeetB');">
+            <div class='innards cover'>
+                <div class='centerMiddle'>
+                    <div class='frontTitle'> Yeet. </div>
+                    <div class='innerContent'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id=yeetB class='container back sampleFlipper animated fadeInDown' onclick="swap(this, 'yeetF');">
+            <div class='innards'>
+                <div class='innerTitle'> Yeet. </div>
+                <div class='innerContent'>[image here]</div>
+                <div class='innerContent'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis ante vel efficitur pretium. Nunc varius sollicitudin imperdiet. Aenean lobortis commodo ipsum ut bibendum. Quisque urna libero, malesuada et laoreet at, volutpat nec risus. Aliquam nec semper neque. Nunc ultrices scelerisque laoreet. Curabitur faucibus sodales faucibus. Duis vulputate vel justo a tincidunt. Phasellus dictum mauris eu nunc ornare, in fringilla dui ornare. In congue urna libero, non porta augue dictum id. Ut quis tristique nulla, at interdum dui. Praesent cursus risus ut tortor blandit rutrum. Integer feugiat turpis porta, malesuada magna ac, rhoncus lorem. Quisque eros nulla, interdum in sapien eu, pellentesque euismod massa. Nulla facilisis, ligula sit amet viverra volutpat, arcu ex convallis diam, et tempus lectus libero quis nunc. Mauris erat est, vestibulum cursus tempor in, iaculis at augue.     
+                </div>
+            </div>
+        </div>
+
+        <div id=okF class='container front overlapper animated fadeInDown' onclick="swap(this, 'okB');">
+            <div class='innards cover'>
+                <div class='centerMiddle'>
+                    <div class='frontTitle'> Yeet. </div>
+                    <div class='innerContent'>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id=okB class='container back overlapper animated fadeInDown' onclick="swap(this, 'okF');">
+            <div class='innards'>
+                <div class='innerTitle'> Yeet. </div>
+                <div class='innerContent'>[image here]</div>
+                <div class='innerContent'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis ante vel efficitur pretium. Nunc varius sollicitudin imperdiet. Aenean lobortis commodo ipsum ut bibendum. Quisque urna libero, malesuada et laoreet at, volutpat nec risus. Aliquam nec semper neque. Nunc ultrices scelerisque laoreet. Curabitur faucibus sodales faucibus. Duis vulputate vel justo a tincidunt. Phasellus dictum mauris eu nunc ornare, in fringilla dui ornare. In congue urna libero, non porta augue dictum id. Ut quis tristique nulla, at interdum dui. Praesent cursus risus ut tortor blandit rutrum. Integer feugiat turpis porta, malesuada magna ac, rhoncus lorem. Quisque eros nulla, interdum in sapien eu, pellentesque euismod massa. Nulla facilisis, ligula sit amet viverra volutpat, arcu ex convallis diam, et tempus lectus libero quis nunc. Mauris erat est, vestibulum cursus tempor in, iaculis at augue.     
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
