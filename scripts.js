@@ -51,8 +51,8 @@ function showContent(elm, second){
             //content.style.opacity = '1'; 
             content.classList.remove('fadeOut');
             void content.offsetWidth;
-            content.classList.add('fadeIn');
-            content.innerHTML = innards.innerHTML;}, 200);
+            content.innerHTML = innards.innerHTML;
+            content.classList.add('fadeIn');}, 200);
     } 
 }
 
