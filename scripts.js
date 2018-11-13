@@ -4,9 +4,10 @@ pagename = '';
 active = -1;
 wiped = false;
 
-function saveState(){
+function saveState(idx){
+    names=['DESIGN','ANIMATION','GAMES']
     pN = gelm('pageName');
-    pagename = pN.innerHTML;
+    pagename = names[idx];//pN.innerHTML;
 }
 
 function gelm(id){
@@ -124,12 +125,16 @@ function wipeBg(){
 }
 
 function hover(str, elm){
-    pN = gelm('pageName');
-    pN.innerHTML = str;
+    if (pagename != ''){
+        pN = gelm('pageName');
+        pN.innerHTML = str;
+    }
 }
 function unhover(){
-    pN = gelm('pageName');
-    pN.innerHTML = pagename;
+    if (pagename != ''){
+        pN = gelm('pageName');
+        pN.innerHTML = pagename;
+    }
 }
 
 function swap(elm, match){
