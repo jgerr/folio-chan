@@ -1,7 +1,8 @@
 <html>
     <head>
-        <title>design?! </title>
+        <title>animation?! </title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style_anim.css">
         <link rel="stylesheet" type="text/css" href="animations.css">
         <link href="https://fonts.googleapis.com/css?family=Gudea|Share|Dosis" rel="stylesheet">
     </head>
@@ -30,21 +31,6 @@
             </svg>
         </div>
         <div id=optionsParent>
-            <!--<div id=anim style="height:80px;" class="menuOption clickable animated" onmouseover="pulseOut(this);hover('ANIMATION', this);" onmouseout="pulseIn(this);unhover();">
-                <div class='centerBottom'>
-                    <img src='animate.png' width=100%>
-                </div>
-            </div>
-            <div id=design style="height:160px;" class="menuOption clickable animated" onmouseover="pulseOut(this);hover('DESIGN', this);" onmouseout="pulseIn(this);unhover();">
-                <div class='centerBottom'>
-                    <img src='design.png' width=100%>
-                </div>
-            </div>
-            <div id=games style="height:110px;" class="menuOption clickable animated" onmouseover="pulseOut(this);hover('GAMES', this);" onmouseout="pulseIn(this);unhover();">
-                <div class='centerBottom'>
-                    <img src='gameAlt.png' width=100%>
-                </div>
-            </div>-->
             <div id=animDropletMenu class='droplet2 shadow animated' onmouseover="pulseOut(this);hover('ANIMATION', this);" onmouseout="pulseIn(this);unhover();">
                     <a href='animation.html'>
                         <svg class='cloud' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496.86 496.86"><defs><style>.cls-7{fill:#ffce6a;}.cls-8{fill:#ff8a1d;opacity:0.6;}.cls-9{fill:#ff441d;}</style></defs><title>animation!</title><g id="yello">
@@ -80,7 +66,7 @@
                 </div>
         </div>
         <div id=pageName>
-            DESIGN
+            ANIMATION
         </div>
     </div>
 
@@ -88,12 +74,12 @@
             loreum ipsum loreum ipsum loreum ipsum loreum ipsum loreum ipsum
     </div>
 
-    <div id=stickersF class='container front stickers animated fadeIn' onclick="showContent(this, 'stickersB', 0); wipe(this); fadeToggle('bgImage', '255, 179, 217,0.85', 'design/stickers/icecream.png', 'repeat', 'auto');">
+    <div id=gamespritesF class='container front stickers animated fadeIn' onclick="showContent(this, 'stickersB', 1); wipe(this); fadeToggle('bgImage', '194, 142, 194,  0.88', 'anim/gamesBG.png', 'no-repeat', 'cover');">
         <div class='innards cover'>
             <div class='centerMiddle'>
-                <div class='frontTitle'> LINE Stickers </div>
+                <div class='frontTitle'> Game Sprites</div>
                 <div class='innerContent'>
-                    Animated stickers for the LINE messaging app.     
+                    Assorted sprite animations I've made for games.    
                 </div>
             </div>
         </div>
@@ -102,79 +88,78 @@
 
     <div id=stickersB class='container2 tab animated'>
         <div class='innards'>
-            <div class='innerTitle'> LINE Stickers </div>
+            <div class='innerTitle'> Game Sprites </div>
             <div class='innerContent'>
-                I make <a href="https://store.line.me/stickershop/author/132264/en/" target="_blank">animated sticker packs</a> for LINE.
+                I make a lot of animated sprites for games! <br><br>
+                <video class='imageTop imageBottom' width=100% autoplay loop muted>
+                    <source src="anim/momo.mp4" type="video/mp4">
+                </video>
                 <p>
-                <a href='https://store.line.me/stickershop/product/1415148/en' target="_blank">The Daily Lives of Ice Cream</a> shows what I imagine ice cream cones get up to in their spare time. Trax the T-Rex's sticker pack is currently in the publishing pipeline!
+                For the puzzle-platformer <i>Inspectre</i>, I rigged and animated the main character in various movement states. Furthermore, I gave several background assets animated states that added to the livelihood of the game. 
+                </p>
+                <video class='imageTop' width=100% autoplay loop muted>
+                    <source src="anim/soapOp.mp4" type="video/mp4">
+                </video>
+                <video class='imageBottom' width=100% autoplay loop muted>
+                    <source src="anim/soapGame.mp4" type="video/mp4">
+                </video>
+                <p>
+                On the rhythm-fighting game <i>Snakes on a Plane</i>, I designed several backgrounds and tiles for levels with different themes, each inspired by a different song. 
+                </p>
+
+                <video class='imageTop imageBottom' width=100% autoplay loop muted>
+                    <source src="anim/wtss.mp4" type="video/mp4">
+                </video>
+                <p>
+                On the project <i>Walkie Talkie Space Ship</i> for CMS.611, I animated asteroids and a spaceship in the style of aliased, retro space invaders games. 
                 </p>
             </div>
-            <div class='innerContent justify'>
-                    <img src='design/stickers/14_melt.png' height=15% onmouseover="replay(this);">
-                    <img src='design/stickers/01_blushy2.png' height=15% onmouseover="replay(this);">
-                
-            </div>
-            <!--<div class='innerContent justify'>
-                    <img src='design/stickers/16_wink.png' class='imgSmall' onmouseover="replay(this);">
-                    <img src='design/stickers/02_ow.png'  class='imgSmall' onmouseover="replay(this);">
-                    <img src='design/stickers/14_melt.png' class='imgSmall' onmouseover="replay(this);">
-                </div>
-            <div class='innerContent'>
-                <img src='design/stickers/01_blushy2.png' class='imgSmall' onmouseover="replay(this);">
-                <img src='design/stickers/16_pancake.png'  class='imgSmall' onmouseover="replay(this);">
-                <img src='design/stickers/08_skippoo.png' class='imgSmall' onmouseover="replay(this);">
-            </div>-->
         </div>
     </div>
 
-    <div id=nbtF class='container front nbt animated fadeIn' onclick="showContent(this, 'nbtB', 1); wipe(this); fadeToggle('bgImage', '198, 179, 255,0.85', 'design/nbt/maze.jpg', 'no-repeat', 'cover');">
+    <div id=mrbF class='container front nbt animated fadeIn' onclick="showContent(this, 'mrbB', 0); wipe(this); fadeToggle('bgImage', '236, 143, 187, 0.603', 'anim/mrbBG1.png', 'no-repeat', 'cover');">
         <div class='innards cover'>
             <div class='centerMiddle'>
-                <div class='frontTitle'> The aMAZEing Space </div>
+                <div class='frontTitle'> Mr. Balloon's Wild Ride </div>
                 <div class='innerContent'>
-                    Aesthetics of a pop-up maze and its promo materials.     
+                    Animated short about losing your head.     
                 </div>
             </div>
         </div>
     </div>
 
-    <div id=nbtB class='container2 tab animated'>
+    <div id=mrbB class='container2 tab animated'>
         <div class='innards'>
-            <div class='innerTitle'> The aMAZEing Space </div>
+            <div class='innerTitle'> Mr. Balloon's Wild Ride </div>
             <div class='innerContent'>
-                Last year, I designed the aesthetics for a student-run maze during campus preview week. 
-            </div>
-            <div class='innerContent'><img src='design/nbt/logo.png' width=100%></div>
-            <div class='innerContent'>
-                <p>Our theme was 'space', so I placed a rocket in the center of the logo and surrounded it with a circular maze resembling planetary rings.</p>  
-                <img src='design/nbt/maze.jpg' class='imageTop' width=100%>
-                <img src='design/nbt/galaxy.jpg' class='imageBottom' width=100%>
-                <p>The maze itself mirrored this structure: a rocket-like tower in the center, and celestial bodies painted around the exterior.</p>
+            In high school, I animated a 'silent film'-style short about Mr. Balloon and his lost head. 
+            <br><br>
+            <iframe  width="560" height="349" src="https://www.youtube.com/embed/YUPx8doc-T4" frameborder="0" allowfullscreen></iframe>
+            <p>This piece won runner-up in the Virginia Film Festival's High School Directors competition in 2015.</p>
             </div>
         </div>
     </div>
 
-    <div id=hellF class='container front hell animated fadeIn' onclick="showContent(this, 'hellB', 0); wipe(this); fadeToggle('bgImage', '255, 179, 179,0.95', 'design/hell/hellBG.png', 'repeat', 'cover');">
+    <div id=fightF class='container front hell animated fadeIn' onclick="showContent(this, 'fightB', 0); wipe(this); fadeToggle('bgImage', '220, 220, 220, 0.7', 'anim/fightBG.png', 'repeat', 'cover');">
         <div class='innards cover'>
             <div class='centerMiddle'>
-                <div class='frontTitle'> Hell's Kitchen </div>
+                <div class='frontTitle'> Fight Club </div>
                 <div class='innerContent'>
-                    An interactive comic. Try to make curry without messing up!     
+                    An animation about the rules of Fight Club.     
                 </div>
             </div>
         </div>
     </div>
 
-    <div id=hellB class='container2 tab animated'>
+    <div id=fightB class='container2 tab animated'>
         <div class='innards'>
-            <div class='innerTitle'> Hell's Kitchen </div>
+            <div class='innerTitle'> Fight Club </div>
             <div class='innerContent'>
-                <i>Hell's Kitchen</i> is a 24-page multisequential comic wherein you, a rookie chef, are making curry for the first time.
-                <span class=smol>...or at least attempting to do so.</span>
+                <i>Fight Club</i> is an animation I made in 2016 about the classic rules of Fight Club. I'm violating the rules right now, but hey, it's for a good cause!
+                <iframe width="560" height="349"  src="https://www.youtube.com/embed/RAo0ZK4KBl0"  frameborder="0" allowfullscreen></iframe>
                 <p>
-                You can read it <a href>on my site</a> digitally, or find me in the Real World™ and cop a tangible copy.
-                </p>
-                <!-- was borne out of a mid-semester project for CMS.618, <i>Interactive Narrative.</i> -->   
+                I made this for a competition in 2016. It was exciting to create a 2D animation entirely from hand using TVPaint, no tweening or vectorization hacks to speak of!
+                </p>   
             </div>
         </div>
     </div>
