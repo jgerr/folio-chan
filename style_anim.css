@@ -33,11 +33,11 @@
 
 #modelF{
     color: rgb(255, 255, 255);
-    text-shadow: 0 0 12px rgb(0, 87, 12);
-    background-image:linear-gradient(0deg,rgba(68, 151, 119, 0.7),rgba(68, 151, 119,0.7)), url('anim/modelBG.PNG');
+    text-shadow: 0 0 12px rgb(0, 82, 158);
+    background-image:linear-gradient(0deg,rgba(93, 96, 255, 0.7),rgba(93, 96, 255,0.7)), url('anim/modelBG.PNG');
     background-position:center;
     background-size:cover;
 }
 #modelF:hover{
-    background-image:linear-gradient(0deg,rgba(68, 151, 119,0.85),rgba(68, 151, 119,0.85)), url('anim/modelBG.PNG');
+    background-image:linear-gradient(0deg,rgba(93, 96, 255,0.85),rgba(93, 96, 255,0.85)), url('anim/modelBG.PNG');
 }
