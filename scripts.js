@@ -33,13 +33,13 @@ function expand(elm, second){
     } 
 }
 
-function showContent(elm, second){
+function showContent(elm, second, long){
     var innards = gelm(second);
     var content = gelm('qualityContent');
     
     if (content.classList.contains('fadeIn')){
         if (content.innerHTML != innards.innerHTML){
-            setTimeout(function(){showContent(elm, second);}, 400);
+            setTimeout(function(){showContent(elm, second, long);}, 400);
         }
         //content.style.opacity = '0';
         content.classList.remove('fadeIn');
@@ -48,6 +48,17 @@ function showContent(elm, second){
     }
     else { //SHOW content
         setTimeout(function(){ 
+            if (long == 0){
+                content.classList.remove('longContent');
+                content.classList.add('shortContent');
+                content.classList.add('centerParent');
+            }
+            else{
+                content.classList.remove('shortContent');
+                content.classList.remove('centerParent');
+                content.classList.add('longContent');
+            }
+            
             //content.style.opacity = '1'; 
             content.classList.remove('fadeOut');
             void content.offsetWidth;
